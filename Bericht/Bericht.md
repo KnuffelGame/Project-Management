@@ -7,7 +7,7 @@ header-includes:
 
 ![](./images/slide01.png)
 
-Wir haben ein echtzeitfähiges Multiplayer Online Kniffelspiel entwickelt. 
+Wir haben ein echtzeitfähiges Multiplayer Online Kniffelspiel als Microservice-Architektur entwickelt.
 
 # Demo
 
@@ -61,7 +61,7 @@ Ein neuer User öffnet die App, gibt einen Username ein und erstellt eine neue L
 
 ### Sequenzdiagramm
 
-```mermaid
+```{.mermaid format=svg}
 sequenceDiagram
     participant Browser
     participant Frontend
@@ -114,7 +114,7 @@ Ein zweiter User (Bob) möchte der Lobby von Alice beitreten. Er gibt seinen Use
 
 ### Sequenzdiagramm
 
-```mermaid
+```{.mermaid format=svg}
 sequenceDiagram
     participant Browser as Browser (Bob)
     participant Frontend as Frontend (Bob)
@@ -176,7 +176,7 @@ Alice (Lobby-Leiter) klickt auf "Spiel starten". Das System erstellt ein Game, l
 
 ### Sequenzdiagramm
 
-```mermaid
+```{.mermaid format=svg}
 sequenceDiagram
     participant Frontend_Alice as Frontend (Alice)
     participant Gateway as API Gateway
@@ -238,7 +238,7 @@ Charlie ist am Zug. Er würfelt dreimal, fixiert Würfel zwischen den Würfen, w
 
 ### Sequenzdiagramm
 
-```mermaid
+```{.mermaid format=svg}
 sequenceDiagram
     participant Frontend_Charlie as Frontend (Charlie)
     participant Gateway as API Gateway
@@ -358,7 +358,7 @@ Alice füllt ihr letztes (13.) Feld aus. Der Game Service erkennt, dass alle Spi
 
 ### Sequenzdiagramm
 
-```mermaid
+```{.mermaid format=svg}
 sequenceDiagram
     participant Frontend_Alice as Frontend (Alice)
     participant Gateway as API Gateway
@@ -429,7 +429,7 @@ Die Spieler sind auf der Endeseite. Alice (Lobby-Leiter) klickt auf "Nochmal spi
 
 ### Sequenzdiagramm
 
-```mermaid
+```{.mermaid format=svg}
 sequenceDiagram
     participant Frontend_Alice as Frontend (Alice)
     participant Gateway as API Gateway
